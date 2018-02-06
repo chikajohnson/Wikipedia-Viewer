@@ -1,0 +1,106 @@
+body {
+  padding-top: 20px;
+  position: relative;
+}
+main{
+  min-height: 550px;
+}
+section{
+  display:none;
+}
+
+section .article{
+  padding: 5px 0;
+  width:30%;
+  display: inline-block;
+  border: 2px solid #CA8308;
+}
+.section .article h4{
+  font-size: 1.4em;
+  padding: .2em;
+}
+.search{
+  position:absolute; top:35%;left:20%;right:20%;
+  font-size: 1em;
+}
+
+.search h5{
+  font-size: 1.2em;
+}
+
+.search-container {
+  width:50%; 
+  margin:0 auto; 
+  height:50px;
+}
+
+.search-button { 
+  width:100%;
+  height:50px;
+  background: #d38b06 !important
+  /* padding:0 15px; */
+}
+
+.display{
+  display: block;
+}
+
+.hide{
+  display: none;
+  visibility: hidden;
+}
+
+.search-text {
+font-size: .85em;
+text-align: center;
+border: 1px solid orange !important;
+height:50px;
+}
+
+.search-text:focus{
+  border: 3px solid #999897 !important;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.footer {
+  width:30%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+  margin: 0 auto;
+  border-top: 4px solid #CA8308;
+}
+
+@media screen and (max-width: 60em) {
+  /* Remove the padding we set earlier */
+  .search-container {
+    width:100% ; 
+    margin:0 auto; 
+  }
+  section .article{
+    width:40%;
+  }
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 48em) {
+  /* Remove the padding we set earlier */
+  .search-container {
+    width:100% ; 
+    margin:0 auto; 
+  }
+  section .article{
+    width:100%;
+  }
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
