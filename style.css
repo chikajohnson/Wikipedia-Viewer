@@ -5,24 +5,30 @@ body {
 main{
   min-height: 550px;
 }
+
+.card:hover{
+  border: 2px solid orange;
+}
+
+main h2{
+  border-bottom:3px solid #D38B06;
+}
 section{
   display:none;
 }
 
-section .article{
-  padding: 5px 0;
-  width:30%;
-  display: inline-block;
-  border: 2px solid #CA8308;
-}
-.section .article h4{
-  font-size: 1.4em;
-  padding: .2em;
-}
-.search{
+.position {
   position:absolute; top:35%;left:20%;right:20%;
+}
+h5 a, h5 a:hover{
+  text-decoration:none;
+  color:white;
+}
+
+.after-search{
   font-size: 1em;
 }
+
 
 .search h5{
   font-size: 1.2em;
@@ -41,6 +47,14 @@ section .article{
   /* padding:0 15px; */
 }
 
+.card-columns h1{
+font-size:  1.3em;
+}
+
+.card-columns a:hover{
+  text-decoration: none;
+  }
+
 .display{
   display: block;
 }
@@ -52,6 +66,7 @@ section .article{
 
 .search-text {
 font-size: .85em;
+font-weight: bold;
 text-align: center;
 border: 1px solid orange !important;
 height:50px;
@@ -59,6 +74,12 @@ height:50px;
 
 .search-text:focus{
   border: 3px solid #999897 !important;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.search-text-danger{
+  border: 4px solid red !important;
   font-size: 1em;
   font-weight: bold;
 }
@@ -102,5 +123,19 @@ height:50px;
     padding-left: 0;
   }
 }
+
+@media (max-width: 880.99px) { 
+  
+.card-columns {
+  column-count: 2;
+}
+
+@media (max-width: 550.99px) { 
+  
+.card-columns {
+  column-count: 1;
+}
+
+
 
 
