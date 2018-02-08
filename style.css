@@ -54,6 +54,10 @@ font-size:  1.3em;
 .card-columns a:hover{
   text-decoration: none;
   }
+  .image{
+    display: none;
+
+  }
 
 .display{
   display: block;
